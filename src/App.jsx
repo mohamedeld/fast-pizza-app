@@ -19,15 +19,17 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/cart",
+        element: <Cart />,
+        errorElement: <Error />,
+      },
+      {
         path: "/menu",
         element: <Menu />,
         loader: menuLoader,
         errorElement: <Error />,
       },
-      {
-        path: "/cart",
-        element: <Cart />,
-      },
+
       {
         path: "/order/new",
         element: <CreateOrder />,
