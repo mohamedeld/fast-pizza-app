@@ -9,6 +9,7 @@ export default function Button({ children, disabled, type, onClick }) {
     small: `${base} px-4 py-2 md:px-5 md:py-2.5 text-sm`,
     delete:
       "inline-block rounded-full bg-stone-100 font-semibold capitalize tracking-side text-stone-500 transition-colors duration-300 hover:bg-stone-200 focus:outline-none focus:ring focus:ring-stone-100 focus:ring-offset-2 py-2 px-3 hover:text-stone-700",
+    round: `${base} px-2.5 py-1 md:px-3.5 md:py-2 font-bold text-sm`,
   };
   return (
     <button disabled={disabled} className={styles[type]} onClick={onClick}>
